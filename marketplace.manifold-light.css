@@ -1,0 +1,126 @@
+
+/** light theme for marketplace */
+:root {
+  /**
+   * using the shared variables provided by manifold
+   */
+  --manifold-theme--color--primary: hsl(0deg, 0%, 0%);
+  --manifold-theme--color--secondary: hsl(0deg, 0%, 95%);
+  --manifold-theme--color--success: hsl(120deg, 57%, 53%);
+  --manifold-theme--color--error: hsl(0deg, 57%, 53%);
+  --manifold-theme--color--warning: hsl(33deg, 65%, 51%);
+  --manifold-theme--color--info: hsl(234deg, 82%, 71%);
+  --manifold-text--color--primary: hsl(0deg, 0%, 100%);
+  --manifold-text--color--secondary: hsl(0deg, 0%, 30%);
+  --manifold-text--color--muted: hsla(0deg, 0%, 0%, 0.66);
+  --manifold-text--color--disabled: hsla(0deg, 0%, 0%, 0.55);
+  --manifold-text--color--body: hsla(0deg, 0%, 0%, 0.87);
+  --manifold-border--color: hsl(0deg, 0%, 90%);
+  --manifold-page--color--background: hsl(0deg, 0%, 100%);
+  /* changing the value of the element background */
+  --manifold-element--color--background: hsl(0, 0%, 95%);
+}
+
+.m-component__fab {
+  --m-component-fab--color--text: hsla(0, 0%, 10%, 0.9);
+  --m-component-fab--color--background: hsla(0, 0%, 0%, 0.25);
+  --m-component-fab--color--hover: hsl(0, 0%, 55%);
+}
+
+.m-component__loading {
+  --m-component-loading--color--values: 0, 0%, 50%;
+  --m-component-overlay--color--border: hsla(0, 0%, 10%, 0.15);}
+
+.m-marketplace {
+  --m-marketplace-fab--color--text: hsla(0, 0%, 10%, 0.9);
+  --m-marketplace-fab--color--background: hsla(0, 0%, 0%, 0.25);
+  --m-marketplace-fab--color--hover: hsl(0, 0%, 80%);
+  --m-marketplace-loading--color--values: 0, 0%, 50%;
+  --m-marketplace-overlay--color--border: hsla(0, 0%, 10%, 0.15);
+  --m-marketplace-input--color--background: hsla(0, 0%, 0%, 0.05);
+  --m-marketplace-popup--color--background: hsla(0, 0%, 20%, 0.25);
+  --m-marketplace-popup--color--button: hsl(0, 0%, 0%);
+  --m-marketplace-popup--color--button--hover: hsl(0, 0%, 20%);
+  --m-marketplace-popup--color--button--text: hsl(0, 0%, 100%);
+}
+
+.m-marketplace :is(.m-link-action img, .m-interaction a, .m-video-player button svg) {
+  filter: invert(1);
+}
+
+.m-marketplace :is(.m-interaction__amount, .m-interaction__timestamp) {
+  --manifold-element--color--background: hsla(0, 0%, 70%, 0.2);
+}
+
+.m-marketplace :is(.m-interaction__user, .m-interaction__referrer) {
+  --manifold-element--color--background: hsla(0, 0%, 85%, 0.1);
+}
+
+.m-interactions {
+  border: 0 !important;
+  border-top: 1px solid var(--manifold-border--color) !important;
+  border-bottom: 1px solid var(--manifold-border--color) !important;
+}
+
+.m-interactions__header > span {
+  margin-top: 0 !important;
+}
+
+.m-attributes {
+  max-width: 100% !important;
+}
+
+.m-marketplace .m-confirmation-dialog > div > a:before {
+  background-image: url("");
+}
+
+.m-marketplace .m-progress-meter {
+  --manifold-element--color--background: hsla(0, 0%, 0%, 0.2);
+}
+
+.m-marketplace .m-links .m-copy-link > span {
+  color: black;
+  background: linear-gradient(to left, hsla(0, 0%, 100%, 0.9), transparent);
+}
+
+.m-links .m-link-action {
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-left: 0;
+}
+
+.m-links .m-link-action:hover {
+  background: hsla(0, 0%, 0%, 20%);
+  opacity: 1;
+  filter: unset;
+}
+
+.m-confirm {
+  --manifold-text--font-family--body: "Chivo", sans-serif;
+  font-family: var(--manifold-text--font-family--body);
+}
+
+.m-countdown {
+  --manifold-text--font-family--body: monospace;
+  font-family: var(--manifold-text--font-family--body);
+  border: 1px solid var(--manifold-border--color);
+  border-top: none;
+  padding: 15px;
+}
+
+.m-countdown p:only-child {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.m-marketplace .m-card .m-bid-form input {
+  background: linear-gradient(135deg, hsl(0, 0%, 80%), hsl(0, 0%, 95%));
+}
+
+.m-marketplace .m-card {
+  background: linear-gradient(to top, hsl(0, 0%, 95%), hsla(0, 0%, 65%, 75%));
+}
+
+.m-complete-view .m-description p {
+  font-size: 14px;
+}
